@@ -9,9 +9,9 @@ Standalone CollabHub "Nexus" userscripts and a tag-driven release pack, part of 
 | File | Version | Status |
 |---|---|---|
 | `99-OmniNexus-Final.module.user.js` | 99.0 | **Current** — use this one |
-| `25-FinalNexus.module.user.js` | 25.0 | Superseded by 99 |
-| `23-UltimateNexus.module.user.js` | 23.0 | Superseded by 99 |
-| `22-CompleteNexus.module.user.js` | 22.0 | Superseded by 99 |
+| `archive/25-FinalNexus.module.user.js` | 25.0 | Superseded by 99 |
+| `archive/23-UltimateNexus.module.user.js` | 23.0 | Superseded by 99 |
+| `archive/22-CompleteNexus.module.user.js` | 22.0 | Superseded by 99 |
 | `evolve.js` | — | Placeholder evolve cycle (`npm run evolve`); logs status only |
 | `.github/workflows/release.yml` | — | Packs the repo into a zip on `v*` tags or manual dispatch |
 
@@ -23,7 +23,7 @@ Each Nexus script is a Tampermonkey userscript that matches `*://*/*`, stores pr
 2. Open `99-OmniNexus-Final.module.user.js` (Raw) and accept the install prompt.
 3. Use the Tampermonkey menu command to enter your own provider keys.
 
-Install only one Nexus version at a time; they overlap.
+Install only one Nexus version at a time; they overlap. Superseded versions live in `archive/`.
 
 ## Release
 
@@ -40,7 +40,6 @@ git push origin v1.0.1
 
 ## Roadmap
 
-- Move 22/23/25 to `archive/`.
 - Bring the FreeAI rotator into this repository so standalone and mirror match.
 - Route provider calls through the free-first ladder (local → keyless → free tiers → paid opt-in).
 - Replace the placeholder `test`/`build`/`evolve` scripts with a real header lint and syntax check.
